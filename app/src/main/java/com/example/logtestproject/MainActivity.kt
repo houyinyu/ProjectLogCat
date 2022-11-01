@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        DragViewUtils.getInstance().addDrag(main_rootLayout,this).setBack(com.hyy.logcat.R.drawable.ic_launcher_background)
+        DragViewUtils.getInstance().addDrag(main_rootLayout).setBack(com.hyy.logcat.R.drawable.ic_launcher_background)
         main_goLogin.setOnClickListener {
             DragViewUtils.getInstance().hideDrag()
         }

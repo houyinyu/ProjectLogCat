@@ -37,8 +37,8 @@ public class DragViewUtils {
     }
 
 
-    public DragViewUtils addDrag(ViewGroup groupLayout, Context context) {
-        actionButton = new DragFloatActionButton(context);
+    public DragViewUtils addDrag(ViewGroup groupLayout) {
+        actionButton = new DragFloatActionButton(groupLayout.getContext());
         actionButton.setBackgroundResource(R.drawable.shape_yellow_back);
         actionButton.setImageResource(R.drawable.yellow_log);
         actionButton.setScaleType(ImageView.ScaleType.CENTER);
@@ -47,6 +47,7 @@ public class DragViewUtils {
             @Override
             public void onClick() {
                 Intent intent = new Intent(context, LogCatActivity1.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
@@ -56,6 +57,14 @@ public class DragViewUtils {
         return this;
     }
 
+    public void removeDrag(ViewGroup groupLayout) {
+        for (int i = groupLayout.getChildCount() - 1; i >= 0; i--) {
+            View childView = groupLayout.getChildAt(i);
+            if (childView instanceof DragFloatActionButton) {
+                groupLayout.removeView(childView);
+            }
+        }
+    }
 
     public DragViewUtils setBack(int backRes) {
         if (actionButton != null) {
