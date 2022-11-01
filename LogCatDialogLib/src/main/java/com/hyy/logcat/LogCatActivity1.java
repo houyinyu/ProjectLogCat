@@ -1,8 +1,11 @@
 package com.hyy.logcat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -29,6 +32,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+
+import pub.devrel.easypermissions.EasyPermissions;
 
 /**
  * @Author : Hou
@@ -86,6 +91,7 @@ public class LogCatActivity1 extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
+
             }
         });
         dismissBtn.setOnClickListener(new View.OnClickListener() {
@@ -96,13 +102,11 @@ public class LogCatActivity1 extends AppCompatActivity {
         });
     }
 
-    private String DIR = Environment.getExternalStorageDirectory().getAbsolutePath() +
-            "/AndroidLog";
-
+    private final String DIR =
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getAbsolutePath() + "/AndroidLog";
     RandomAccessFile randomFile = null;
 
     public void writeToTxt(List<String> list) throws Exception {
-
         File file = new File(DIR);
         if (!file.exists()) {
             file.mkdirs();
@@ -121,5 +125,6 @@ public class LogCatActivity1 extends AppCompatActivity {
             Log.d("LogCatActivity", e.toString());
         }
     }
+
 
 }
