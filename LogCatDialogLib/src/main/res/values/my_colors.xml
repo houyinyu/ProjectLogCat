@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="themeBackground">#ebebeb</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="themeColor">#e40404</color>    <!-- 系统主色调 -->
+    <color name="themeColorDark">#bd0909</color>
+    <color name="colorBlue">#2f6be6</color>
+    <color name="colorBlueDark">#2164b2</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_1f">#1f1f1f</color>
+    <color name="color_f1">#f1f1f1</color>
+    <color name="color_f3">#f3f3f3</color>
+    <color name="color_b3">#b3b3b3</color>
+    <color name="color_bf">#bfbfbf</color>
+    <color name="color_60">#606060</color>
+    <color name="color_e8">#e8e8e8</color>
+    <color name="color_green">#1bb869</color>
+    <color name="color_green2">#51d560</color>
+    <color name="color_green3">#04C464</color>
+    <color name="color_violet">#8554ee</color>
+    <color name="color_alias">#E6AB5C</color>
+    <color name="color_d9">#d9d9d9</color>
+    <color name="color_28">#282828</color>
+    <color name="color_29">#292929</color>
+    <color name="color_Orange">#FF8240</color>
+    <color name="color_OrangeLight">#F6A83B</color>
+    <color name="color_Orange_Dark">#FA4F50</color>
+    <color name="color_BlueLight">#f1f6fc</color>
+    <color name="color_ThemeLight">#fdf6f7</color>
+    <color name="themeColorDark2">#c10202</color>
+
+    <color name="loading_bg">#80040c2b</color>
+    <color name="color_black">#000000</color>
+    <color name="color_333">#333333</color>
+    <color name="color_555">#555555</color>
+    <color name="color_666">#666666</color>
+    <color name="color_999">#999999</color>
+    <color name="color_f0">#f0f0f0</color>
+    <color name="color_f2">#f2f2f2</color>
+    <color name="color_f4">#f4f4f4</color>
+    <color name="color_f5">#f5f5f5</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_f8">#f8f8f8</color>
+    <color name="color_red">#ff0000</color>
+    <color name="cacheColorHint">#00000000</color>
+    <color name="color_sendCode">#fe6700</color>
+    <color name="color_cartOrange">#eb702d</color>
+
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#ffff7328</color>
+    <!-- 显示消息的颜色 -->
+    <color name="news_color">#ff7328</color>
+    <color name="news_orange">#ff7328</color>
+
+    <color name="color_priceRed">#f13200</color>
+    <color name="color_1a">#1a1a1a</color>
+    <color name="color_10">#101010</color>
+    <color name="color_b1">#b1b1b1</color>
+    <color name="color_4d">#4d4d4d</color>
+
+    <color name="color_ccc">#cccccc</color>
+    <color name="color_2a">#2a2a2a</color>
+    <color name="color_80">#808080</color>
+    <color name="color_e5">#e5e5e5</color>
+    <color name="color_e6">#e6e6e6</color>
+    <color name="color_promotion">#E51C23</color>
+    <color name="color_back">#F7F4F8</color>
+    <color name="color_integral">#FFCB30</color>
+    <color name="color_fa3">#FFAA33</color>
+    <color name="color_redLight">#FCEFEF</color>
+    <color name="color_blue2">#4a90e2</color>
+    <color name="color_af">#afafaf</color>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyy.logcat">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application android:requestLegacyExternalStorage="true">
+        <activity
+            android:name=".LogCatActivity1"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogActivityTheme"></activity>
+        <activity
+            android:name=".LogCatActivity2"
+            android:screenOrientation="landscape"
+            android:theme="@style/MyDialogActivityTheme"></activity>
+    </application>
+
+</manifest>
