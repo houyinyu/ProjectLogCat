@@ -4,7 +4,7 @@
 ## 使用方式
 
 ```Java
-    implementation 'com.github.houyinyu:mvvmLib:1.1'
+    implementation 'com.github.houyinyu:ProjectLogCat:1.4'
 ```
 
 
@@ -23,7 +23,7 @@
                release(MavenPublication) {
                    from components.release
                    groupId = 'com.github.houyinyu'//修改成自己的
-                   artifactId = 'mvvmLib'//修改成自己的
+                   artifactId = 'logCatLib'//修改成自己的
                    version = '1.0'//修改成自己的
                }
            }
@@ -31,7 +31,7 @@
    }
 ```
 
-2.在主项目project的build.gradle下添加如下代码（不是app的build.gradle）
+2.在根目录的build.gradle下添加如下代码
 ```Java
       dependencies {
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
