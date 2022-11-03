@@ -18,7 +18,6 @@ import androidx.core.content.ContextCompat;
  */
 public class DragViewUtils {
     private static DragViewUtils viewUtils;
-    private Context context;
 
     public static DragViewUtils getInstance() {
         if (viewUtils == null) {
@@ -37,7 +36,7 @@ public class DragViewUtils {
     }
 
 
-    public DragViewUtils addDrag(ViewGroup groupLayout) {
+    public DragViewUtils addDrag(Context context, ViewGroup groupLayout) {
         actionButton = new DragFloatActionButton(groupLayout.getContext());
         actionButton.setBackgroundResource(R.drawable.shape_yellow_back);
         actionButton.setImageResource(R.drawable.yellow_log);
